@@ -136,7 +136,6 @@
   --grid-white: oklch(1 0 0 / 24%);
 }
 
-/* simple white grid on black, for rectangular panels */
 .bg-grid-rect {
   background-color: #000;
   background-image: linear-gradient(
