@@ -18,14 +18,14 @@ export default function Home() {
   const renderTitle = () => {
     const title = mounted
       ? t("hero.title")
-      : "Avtomobil yuvish jarayonini kuzatishning eng qulay usuli – Washcam!";
-    const parts = title.split("Washcam");
+      : "Avtomobil yuvish jarayonini kuzatishning eng qulay usuli – Washcam";
+    const parts = title.split("Washcam!");
 
     if (parts.length === 2) {
       return (
         <>
           {parts[0]}
-          <span className="text-[#1E3A8A]">Washcam</span>
+          <span className="text-[#1E3A8A]">Washcam!</span>
           {parts[1]}
         </>
       );
@@ -35,7 +35,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-white relative overflow-x-hidden">
+    <main className="min-h-screen bg-white relative overflow-x-hidden flex-1 flex flex-col">
       {/* Hero Section */}
       <section className="container mx-auto px-4 lg:px-0 pt-8 sm:pt-16 lg:pt-[170px] pb-12 lg:pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -132,8 +132,8 @@ export default function Home() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Feature Card 1 - Camera */}
-          <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation">
-            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6 mx-auto">
+          <div className="bg-[#F2F3F8] p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation h-[365px] flex flex-col items-center justify-center text-center">
+            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6">
               <Image
                 src="/solar_camera-outline.svg"
                 alt="Camera Icon"
@@ -142,10 +142,10 @@ export default function Home() {
                 className="w-[50px] h-[50px]"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4 text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4">
               {mounted ? t("features.feature1.title") : "360° Kamera kuzatuvi"}
             </h3>
-            <p className="text-gray-600 text-sm sm:text-base text-center leading-relaxed">
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
               {mounted
                 ? t("features.feature1.description")
                 : "Mashina yuvilishini telefoningizdan real vaqt rejimida tomosha qiling"}
@@ -153,8 +153,8 @@ export default function Home() {
           </div>
 
           {/* Feature Card 2 - Security */}
-          <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation">
-            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6 mx-auto">
+          <div className="bg-[#F2F3F8] p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation h-[365px] flex flex-col items-center justify-center text-center">
+            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6">
               <Image
                 src="/carbon_security.svg"
                 alt="Security Icon"
@@ -163,10 +163,10 @@ export default function Home() {
                 className="w-[50px] h-[50px]"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4 text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4">
               {mounted ? t("features.feature2.title") : "Xavfsizlik"}
             </h3>
-            <p className="text-gray-600 text-sm sm:text-base text-center leading-relaxed">
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
               {mounted
                 ? t("features.feature2.description")
                 : "Mashina yuvish davomida xavfsizlikni to'liq ta'minlaymiz"}
@@ -174,8 +174,8 @@ export default function Home() {
           </div>
 
           {/* Feature Card 3 - Fast Service */}
-          <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation sm:col-span-2 lg:col-span-1">
-            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6 mx-auto">
+          <div className="bg-[#F2F3F8] p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation sm:col-span-2 lg:col-span-1 h-[365px] flex flex-col items-center justify-center text-center">
+            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6">
               <Image
                 src="/mage_electricity.svg"
                 alt="Fast Service Icon"
@@ -184,10 +184,10 @@ export default function Home() {
                 className="w-[50px] h-[50px]"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4 text-center">
+            <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4">
               {mounted ? t("features.feature3.title") : "Tezkor xizmat"}
             </h3>
-            <p className="text-gray-600 text-sm sm:text-base text-center leading-relaxed">
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
               {mounted
                 ? t("features.feature3.description")
                 : "Navbat kutmasdan online buyurtma bering va vaqtingizni tejang"}
@@ -195,6 +195,337 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* How It Works Section */}
+      <section className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
+            {mounted ? t("howItWorks.title") : "WebCam qanday ishlaydi"}
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+            {mounted
+              ? t("howItWorks.subtitle")
+              : "Uchta oddiy qadam bilan Washcam-dan foydalanishni boshlang"}
+          </p>
+        </div>
+
+        {/* Step indicators with arrows (desktop) */}
+        <div className="hidden lg:flex items-center justify-between max-w-5xl mx-auto mb-10">
+          <div className="w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+            <span className="text-white text-2xl font-bold">01</span>
+          </div>
+          <Image
+            src="/Line-1.png"
+            alt="Arrow"
+            width={234}
+            height={24}
+            className="w-[234px] h-6 object-contain"
+          />
+          <div className="w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+            <span className="text-white text-2xl font-bold">02</span>
+          </div>
+          <Image
+            src="/Line-1.png"
+            alt="Arrow"
+            width={234}
+            height={24}
+            className="w-[234px] h-6 object-contain"
+          />
+          <div className="w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+            <span className="text-white text-2xl font-bold">03</span>
+          </div>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 items-start">
+          {/* Step 1 */}
+          <div className="text-center">
+            {/* Mobile number badge */}
+            <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
+              <span className="text-white font-bold">01</span>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 h-[263px] sm:h-[222px] lg:h-[365px] flex flex-col items-center justify-center">
+              <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
+                <img
+                  src="/mynaui_download.svg"
+                  alt="Download Icon"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
+                {mounted ? t("howItWorks.step1.title") : "Ilovani yuklab oling"}
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                {mounted
+                  ? t("howItWorks.step1.description")
+                  : "App Store yoki Google Play-dan Washcam-ni yuklab oling"}
+              </p>
+            </div>
+          </div>
+
+          {/* Mobile connector */}
+          <div className="lg:hidden flex items-center justify-center -mt-4 -mb-2">
+            <Image
+              src="/Line-2.png"
+              alt="Connector"
+              width={32}
+              height={32}
+              className="w-8 h-8 object-contain"
+            />
+          </div>
+
+          {/* Step 2 */}
+          <div className="text-center">
+            {/* Mobile number badge */}
+            <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
+              <span className="text-white font-bold">02</span>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 h-[263px] sm:h-[222px] lg:h-[365px] flex flex-col items-center justify-center">
+              <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
+                <img
+                  src="/proicons_location.svg"
+                  alt="Location Icon"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
+                {mounted
+                  ? t("howItWorks.step2.title")
+                  : "Eng yaqin Washcam moykasini tanlash"}
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                {mounted
+                  ? t("howItWorks.step2.description")
+                  : "Sizga yaqin qulay joyni toping va tanlang"}
+              </p>
+            </div>
+          </div>
+
+          {/* Mobile connector */}
+          <div className="lg:hidden flex items-center justify-center -mt-4 -mb-2">
+            <Image
+              src="/Line-2.png"
+              alt="Connector"
+              width={32}
+              height={32}
+              className="w-8 h-8 object-contain"
+            />
+          </div>
+
+          {/* Step 3 */}
+          <div className="text-center">
+            {/* Mobile number badge */}
+            <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
+              <span className="text-white font-bold">03</span>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 h-[263px] sm:h-[222px] lg:h-[365px] flex flex-col items-center justify-center">
+              <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
+                <img
+                  src="/solar_play-linear.svg"
+                  alt="Play Icon"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
+                Jararayonni jonli kuzatish
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                Avtomobilingizni 360° kamera orqali yuvayotganini tomosha qiling
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile connectors are rendered inline between steps above */}
+      </section>
+
+      {/* Trusted Section */}
+      <section className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
+            {mounted
+              ? t("trusted.title")
+              : "Minglab odamlar tomonidan ishoniladi"}
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+            {mounted
+              ? t("trusted.subtitle")
+              : "Foydalanuvchilarimiz bizga ishonadi"}
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          {/* Users */}
+          <div className="text-center">
+            <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-6">
+              <Image
+                src="/tabler_users.svg"
+                alt="Users Icon"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-[#152349] mb-2">
+              {mounted ? t("trusted.users") : "10,000+ Foydalanuvchilar"}
+            </h3>
+          </div>
+
+          {/* Wash Points */}
+          <div className="text-center">
+            <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-6">
+              <Image
+                src="/proicons_location-1.svg"
+                alt="Location Icon"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-[#152349] mb-2">
+              {mounted ? t("trusted.washPoints") : "100+ Moyka nuqtasi"}
+            </h3>
+          </div>
+
+          {/* Service */}
+          <div className="text-center sm:col-span-2 lg:col-span-1">
+            <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-6">
+              <Image
+                src="/tdesign_time.svg"
+                alt="Time Icon"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-[#152349] mb-2">
+              {mounted ? t("trusted.service") : "24/7 Xizmat"}
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
+            {mounted ? t("sponsors.title") : "Bizning homiylarimiz"}
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+            {mounted ? t("sponsors.subtitle") : "Ishonchli hamkorlarimiz"}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+          {/* Sponsor placeholder cards */}
+          <div className="text-center">
+            <div className="w-full h-[120px] sm:h-[140px] lg:h-[161px] bg-[#F2F3F8] rounded-[10px] flex items-center justify-center mx-auto shadow-sm">
+              <span className="text-[#1E3A8A] font-semibold">Tez kunda!</span>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <div className="w-full h-[120px] sm:h-[140px] lg:h-[161px] bg-[#F2F3F8] rounded-[10px] flex items-center justify-center mx-auto shadow-sm">
+              <span className="text-[#1E3A8A] font-semibold">Tez kunda!</span>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <div className="w-full h-[120px] sm:h-[140px] lg:h-[161px] bg-[#F2F3F8] rounded-[10px] flex items-center justify-center mx-auto shadow-sm">
+              <span className="text-[#1E3A8A] font-semibold">Tez kunda!</span>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <div className="w-full h-[120px] sm:h-[140px] lg:h-[161px] bg-[#F2F3F8] rounded-[10px] flex items-center justify-center mx-auto shadow-sm">
+              <span className="text-[#1E3A8A] font-semibold">Tez kunda!</span>
+            </div>
+          </div>
+
+          <div className="text-center sm:col-span-2 lg:col-span-1">
+            <div className="w-full h-[120px] sm:h-[140px] lg:h-[161px] bg-[#F2F3F8] rounded-[10px] flex items-center justify-center mx-auto shadow-sm">
+              <span className="text-[#1E3A8A] font-semibold">Tez kunda!</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Global Footer at the very bottom */}
+      <footer className="mt-auto bg-[#020A22] text-white">
+        <div className="container mx-auto px-4 lg:px-0 py-12 sm:py-14 lg:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 items-start">
+            <div>
+              <h4 className="text-xl font-semibold mb-4">Washcam</h4>
+              <p className="text-gray-300 leading-relaxed text-sm">
+                360° kamera texnologiyasi bilan avtomobil yuvish jarayonini
+                kuzatishning eng yaxshi usuli
+              </p>
+              <button className="mt-4 inline-flex items-center gap-2 bg-[#1E3A8A] hover:bg-blue-700 transition-colors text-white px-4 py-2 rounded-md text-sm">
+                <span className="inline-block w-3 h-3 bg-white rounded-[2px]"></span>
+                Yuklab olish
+              </button>
+            </div>
+            <div>
+              <h5 className="text-lg font-semibold mb-4">Tezkor havolalar</h5>
+              <ul className="space-y-2 text-gray-300 text-sm">
+                <li>Asosiy</li>
+                <li>Xizmatlar</li>
+                <li>Aloqa</li>
+                <li>Biz haqimizda</li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="text-lg font-semibold mb-4">Xizmatlar</h5>
+              <ul className="space-y-2 text-gray-300 text-sm">
+                <li>360° Kamera kuzatuvi</li>
+                <li>Real vaqt bildirishnomalar</li>
+                <li>Online buyurtmalar</li>
+                <li>24/7 xizmat</li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="text-lg font-semibold mb-4">Aloqa</h5>
+              <ul className="space-y-2 text-gray-300 text-sm">
+                <li>info@washcam.uz</li>
+                <li>+998 (77) 556-55-88</li>
+              </ul>
+              <div className="mt-4 flex items-center gap-3">
+                <Image
+                  src="/image 32.png"
+                  alt="Google Play"
+                  width={128}
+                  height={40}
+                  className="h-10 w-auto object-contain"
+                />
+                <Image
+                  src="/Frame 149.png"
+                  alt="App Store"
+                  width={128}
+                  height={40}
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
+              <div className="mt-4 w-24 h-24 sm:w-28 sm:h-28 bg-white rounded-md p-2">
+                <Image
+                  src="/qrcode.png"
+                  width={112}
+                  height={112}
+                  alt="QR"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-white/10 mt-10 pt-6 text-center text-gray-400 text-xs">
+            © 2025 Washcam. Barcha huquqlar himoyalangan.
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

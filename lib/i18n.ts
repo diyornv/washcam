@@ -43,6 +43,34 @@ const resources = {
             "Navbat kutmasdan online buyurtma bering va vaqtingizni tejang",
         },
       },
+      howItWorks: {
+        title: "WebCam qanday ishlaydi",
+        subtitle: "Uchta oddiy qadam bilan Washcam-dan foydalanishni boshlang",
+        step1: {
+          title: "Ilovani yuklab oling",
+          description: "App Store yoki Google Play-dan Washcam-ni yuklab oling",
+        },
+        step2: {
+          title: "Eng yaqin Washcam moykasini tanlash",
+          description: "Sizga yaqin qulay joyni toping va tanlang",
+        },
+        step3: {
+          title: "Jararayonni jonli kuzatish",
+          description:
+            "Avtomobilingizni 360° kamera orqali yuvayotganini tomosha qiling",
+        },
+      },
+      trusted: {
+        title: "Minglab odamlar tomonidan ishoniladi",
+        subtitle: "Foydalanuvchilarimiz bizga ishonadi",
+        users: "10,000+ Foydalanuvchilar",
+        washPoints: "100+ Moyka nuqtasi",
+        service: "24/7 Xizmat",
+      },
+      sponsors: {
+        title: "Bizning homiylarimiz",
+        subtitle: "Ishonchli hamkorlarimiz",
+      },
     },
   },
   RU: {
@@ -85,6 +113,33 @@ const resources = {
           description: "Заказывайте онлайн без очереди и экономьте свое время",
         },
       },
+      howItWorks: {
+        title: "Как работает WebCam",
+        subtitle: "Начните использовать Washcam в три простых шага",
+        step1: {
+          title: "Скачайте приложение",
+          description: "Скачайте Washcam из App Store или Google Play",
+        },
+        step2: {
+          title: "Выберите ближайшую мойку Washcam",
+          description: "Найдите и выберите удобное место рядом с вами",
+        },
+        step3: {
+          title: "Наблюдайте процесс вживую",
+          description: "Смотрите, как ваш автомобиль моется через 360° камеру",
+        },
+      },
+      trusted: {
+        title: "Доверяют тысячи людей",
+        subtitle: "Наши пользователи доверяют нам",
+        users: "10,000+ Пользователей",
+        washPoints: "100+ Пунктов мойки",
+        service: "24/7 Сервис",
+      },
+      sponsors: {
+        title: "Наши спонсоры",
+        subtitle: "Надежные партнеры",
+      },
     },
   },
   ENG: {
@@ -125,6 +180,33 @@ const resources = {
           description:
             "Order online without waiting in line and save your time",
         },
+      },
+      howItWorks: {
+        title: "How WebCam works",
+        subtitle: "Start using Washcam in three simple steps",
+        step1: {
+          title: "Download the app",
+          description: "Download Washcam from App Store or Google Play",
+        },
+        step2: {
+          title: "Choose the nearest Washcam car wash",
+          description: "Find and choose a convenient location near you",
+        },
+        step3: {
+          title: "Live monitoring of the process",
+          description: "Watch your car being washed via 360° camera",
+        },
+      },
+      trusted: {
+        title: "Trusted by thousands of people",
+        subtitle: "Our users trust us",
+        users: "10,000+ Users",
+        washPoints: "100+ Wash Points",
+        service: "24/7 Service",
+      },
+      sponsors: {
+        title: "Our sponsors",
+        subtitle: "Reliable partners",
       },
     },
   },

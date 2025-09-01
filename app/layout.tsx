@@ -35,11 +35,11 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="antialiased bg-white m-0 p-0"
+        className="antialiased bg-white m-0 p-0 min-h-screen flex flex-col"
         suppressHydrationWarning={true}
       >
         <Navbar />
-        {children}
+        <div className="flex-1 flex flex-col">{children}</div>
       </body>
     </html>
   );
