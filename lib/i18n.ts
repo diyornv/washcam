@@ -25,18 +25,22 @@ const resources = {
       },
       features: {
         title: "Nega Washcam ni tanlash kerak?",
-        subtitle: "Avtomobilingiz yuvilishini kuzatishning eng zamonaviy usuli",
+        subtitle:
+          "Avtomobil yuvish kelajagini bizning innovatsion xususiyatlarimiz bilan his qiling",
         feature1: {
           title: "360° Kamera kuzatuvi",
-          description: "Avtomobilingizning har bir burchagini jonli ko'ring",
+          description:
+            "Mashina yuvilishini telefoningizdan real vaqt rejimida tomosha qiling",
         },
         feature2: {
           title: "Xavfsizlik",
-          description: "Avtomobilingiz xavfsizligi kafolatlangan",
+          description:
+            "Mashina yuvish davomida xavfsizlikni to'liq ta'minlaymiz",
         },
         feature3: {
           title: "Tezkor xizmat",
-          description: "Tez va sifatli yuvish xizmati",
+          description:
+            "Navbat kutmasdan online buyurtma bering va vaqtingizni tejang",
         },
       },
     },
@@ -65,18 +69,20 @@ const resources = {
       features: {
         title: "Почему стоит выбрать Washcam?",
         subtitle:
-          "Самый современный способ наблюдать за мойкой вашего автомобиля",
+          "Почувствуйте будущее мойки автомобилей с нашими инновационными функциями",
         feature1: {
           title: "360° Видеонаблюдение",
-          description: "Наблюдайте за каждым углом вашего автомобиля вживую",
+          description:
+            "Смотрите процесс мойки автомобиля в реальном времени на своем телефоне",
         },
         feature2: {
           title: "Безопасность",
-          description: "Безопасность вашего автомобиля гарантирована",
+          description:
+            "Полностью обеспечиваем безопасность во время мойки автомобиля",
         },
         feature3: {
           title: "Быстрый сервис",
-          description: "Быстрая и качественная мойка",
+          description: "Заказывайте онлайн без очереди и экономьте свое время",
         },
       },
     },
@@ -104,18 +110,20 @@ const resources = {
       },
       features: {
         title: "Why choose Washcam?",
-        subtitle: "The most modern way to monitor your car wash",
+        subtitle:
+          "Experience the future of car washing with our innovative features",
         feature1: {
           title: "360° Camera surveillance",
-          description: "Watch every corner of your car live",
+          description: "Watch the car wash process in real-time on your phone",
         },
         feature2: {
           title: "Security",
-          description: "Your car's security is guaranteed",
+          description: "We fully ensure safety during car washing",
         },
         feature3: {
           title: "Fast service",
-          description: "Fast and quality washing service",
+          description:
+            "Order online without waiting in line and save your time",
         },
       },
     },

@@ -126,25 +126,21 @@ export default function Home() {
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             {mounted
               ? t("features.subtitle")
-              : "Avtomobilingiz yuvilishini kuzatishning eng zamonaviy usuli"}
+              : "Avtomobil yuvish kelajagini bizning innovatsion xususiyatlarimiz bilan his qiling"}
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {/* Feature Card 1 */}
+          {/* Feature Card 1 - Camera */}
           <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto">
-              <svg
-                className="w-6 h-6 sm:w-8 sm:h-8 text-[#1E3A8A]"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                  clipRule="evenodd"
-                />
-              </svg>
+            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6 mx-auto">
+              <Image
+                src="/solar_camera-outline.svg"
+                alt="Camera Icon"
+                width={50}
+                height={50}
+                className="w-[50px] h-[50px]"
+              />
             </div>
             <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4 text-center">
               {mounted ? t("features.feature1.title") : "360° Kamera kuzatuvi"}
@@ -152,24 +148,20 @@ export default function Home() {
             <p className="text-gray-600 text-sm sm:text-base text-center leading-relaxed">
               {mounted
                 ? t("features.feature1.description")
-                : "Avtomobilingizning har bir burchagini jonli ko'ring"}
+                : "Mashina yuvilishini telefoningizdan real vaqt rejimida tomosha qiling"}
             </p>
           </div>
 
-          {/* Feature Card 2 */}
+          {/* Feature Card 2 - Security */}
           <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto">
-              <svg
-                className="w-6 h-6 sm:w-8 sm:h-8 text-green-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
+            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6 mx-auto">
+              <Image
+                src="/carbon_security.svg"
+                alt="Security Icon"
+                width={50}
+                height={50}
+                className="w-[50px] h-[50px]"
+              />
             </div>
             <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4 text-center">
               {mounted ? t("features.feature2.title") : "Xavfsizlik"}
@@ -177,24 +169,20 @@ export default function Home() {
             <p className="text-gray-600 text-sm sm:text-base text-center leading-relaxed">
               {mounted
                 ? t("features.feature2.description")
-                : "Avtomobilingiz xavfsizligi kafolatlangan"}
+                : "Mashina yuvish davomida xavfsizlikni to'liq ta'minlaymiz"}
             </p>
           </div>
 
-          {/* Feature Card 3 */}
+          {/* Feature Card 3 - Fast Service */}
           <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation sm:col-span-2 lg:col-span-1">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto">
-              <svg
-                className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
+            <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6 mx-auto">
+              <Image
+                src="/mage_electricity.svg"
+                alt="Fast Service Icon"
+                width={50}
+                height={50}
+                className="w-[50px] h-[50px]"
+              />
             </div>
             <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3 sm:mb-4 text-center">
               {mounted ? t("features.feature3.title") : "Tezkor xizmat"}
@@ -202,7 +190,7 @@ export default function Home() {
             <p className="text-gray-600 text-sm sm:text-base text-center leading-relaxed">
               {mounted
                 ? t("features.feature3.description")
-                : "Tez va sifatli yuvish xizmati"}
+                : "Navbat kutmasdan online buyurtma bering va vaqtingizni tejang"}
             </p>
           </div>
         </div>
