@@ -118,7 +118,10 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10">
+      <section
+        id="features"
+        className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+      >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
             {mounted ? t("features.title") : "Nega Washcam ni tanlash kerak?"}
@@ -197,7 +200,10 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10">
+      <section
+        id="how-it-works"
+        className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+      >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
             {mounted ? t("howItWorks.title") : "WebCam qanday ishlaydi"}
@@ -345,7 +351,10 @@ export default function Home() {
       </section>
 
       {/* Trusted Section */}
-      <section className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10">
+      <section
+        id="trusted"
+        className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+      >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
             {mounted
@@ -411,7 +420,10 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10">
+      <section
+        id="sponsors"
+        className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+      >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
             {mounted ? t("sponsors.title") : "Bizning homiylarimiz"}

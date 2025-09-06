@@ -56,6 +56,10 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="" />
         <meta name="yandex-verification" content="" />
+        <link rel="canonical" href="https://washcam.uz/" />
+        <link rel="alternate" hrefLang="uz" href="https://washcam.uz/" />
+        <link rel="alternate" hrefLang="ru" href="https://washcam.uz/" />
+        <link rel="alternate" hrefLang="en" href="https://washcam.uz/" />
         <link rel="icon" href="/logo.svg" />
         <link rel="apple-touch-icon" href="/logo.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,6 +71,44 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Washcam",
+              url: "https://washcam.uz",
+              logo: "https://washcam.uz/logo.svg",
+              sameAs: ["https://t.me/washcam", "https://instagram.com/washcam"],
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+998950090009",
+                  contactType: "customer service",
+                  areaServed: "UZ",
+                  availableLanguage: ["uz", "ru", "en"],
+                },
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Washcam",
+              url: "https://washcam.uz",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://washcam.uz/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
         />
       </head>
       <body
