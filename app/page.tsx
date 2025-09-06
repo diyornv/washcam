@@ -491,8 +491,22 @@ export default function Home() {
             <div>
               <h5 className="text-lg font-semibold mb-4">Aloqa</h5>
               <ul className="space-y-2 text-gray-300 text-sm">
-                <li>info@washcam.uz</li>
-                <li>+998 (77) 556-55-88</li>
+                <li>
+                  <a
+                    href="mailto:info@washcam.uz"
+                    className="hover:text-white transition-colors"
+                  >
+                    info@washcam.uz
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="tel:+998950090009"
+                    className="hover:text-white transition-colors"
+                  >
+                    +998 95 009 00 09
+                  </a>
+                </li>
               </ul>
               <div className="mt-4 flex items-center gap-3">
                 <Image

@@ -3,9 +3,41 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Washcam - Avtomobil yuvish jarayonini kuzatish",
+  metadataBase: new URL("https://washcam.uz"),
+  title: {
+    default: "Washcam – Avtomobil yuvish jarayonini kuzatish | 360° kamera",
+    template: "%s | Washcam",
+  },
   description:
-    "Avtomobil yuvish jarayonini kuzatishning eng qulay usuli - Washcam!",
+    "Washcam – 360° kamera orqali avtomobil yuvish jarayonini onlayn kuzating. Real vaqt bildirishnomalar, xavfsiz va qulay xizmat.",
+  keywords: [
+    "Washcam",
+    "washcam uz",
+    "washcam.uz",
+    "avtomobil yuvish online",
+    "360 kamera avtomobil",
+    "avtomobil yuvish kuzatish",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Washcam – Avtomobil yuvish jarayonini kuzatish",
+    description:
+      "360° kamera orqali avtomobilingiz yuvilishini jonli kuzating. Washcam bilan xavfsiz va qulay xizmat.",
+    url: "https://washcam.uz",
+    siteName: "Washcam",
+    images: [{ url: "/logo.svg", width: 1200, height: 630, alt: "Washcam" }],
+    locale: "uz_UZ",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Washcam – Avtomobil yuvish jarayonini kuzatish",
+    description:
+      "360° kamera orqali avtomobil yuvish jarayonini onlayn kuzatish xizmati",
+    images: ["/logo.svg"],
+  },
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
@@ -21,6 +53,9 @@ export default function RootLayout({
   return (
     <html lang="uz" className="m-0 p-0">
       <head>
+        <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="" />
+        <meta name="yandex-verification" content="" />
         <link rel="icon" href="/logo.svg" />
         <link rel="apple-touch-icon" href="/logo.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
