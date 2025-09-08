@@ -212,7 +212,6 @@ const resources = {
   },
 };
 
-// Initialize i18n for both server and client
 i18n.use(initReactI18next).init({
   resources,
   lng: "UZ",

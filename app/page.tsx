@@ -14,7 +14,6 @@ export default function Home() {
     setMounted(true);
   }, []);
 
-  // Function to render title with highlighted "Washcam"
   const renderTitle = () => {
     const title = mounted
       ? t("hero.title")
@@ -36,10 +35,8 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white relative overflow-x-hidden flex-1 flex flex-col">
-      {/* Hero Section */}
       <section className="container mx-auto px-4 lg:px-0 pt-8 sm:pt-16 lg:pt-[170px] pb-12 lg:pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left Content */}
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
             <div className="relative">
               <h1 className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#152349] leading-tight">
@@ -53,7 +50,6 @@ export default function Home() {
                 : "360° kamera orqali mashinangizni real vaqt rejimida kuzating. Washcam bilan avtomobilingiz yuvilishini jonli ko'ring!"}
             </p>
 
-            {/* Download Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-[#1E3A8A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-blue-700 active:bg-blue-800 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center space-x-3 touch-manipulation">
                 <FaGooglePlay className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -71,12 +67,11 @@ export default function Home() {
               </button>
             </div>
 
-            {/* QR Code Section */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
               <div className="flex items-center justify-center">
                 <Image
                   src="/qrcode.png"
-                  alt="QR Code"
+                  alt="Washcam ilovani yuklab olish uchun QR-kod"
                   width={120}
                   height={120}
                   className="w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] object-contain"
@@ -94,21 +89,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Content - Car Image */}
           <div className="relative order-1 lg:order-2">
             <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[549px]">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
                   src="/car.png"
-                  alt="Car"
+                  alt="Washcam avtomobil tasviri"
                   width={970}
                   height={549}
                   className="object-contain w-full h-full"
                   priority
                 />
               </div>
-
-              {/* Decorative Elements */}
               <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 bg-yellow-400 rounded-full animate-bounce z-20"></div>
               <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-4 h-4 sm:w-6 sm:h-6 bg-blue-400 rounded-full animate-pulse z-20"></div>
               <div className="absolute top-1/2 -right-4 sm:-right-8 w-3 h-3 sm:w-4 sm:h-4 bg-green-400 rounded-full animate-ping z-20"></div>
@@ -117,7 +109,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
       <section
         id="features"
         className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
@@ -134,12 +125,11 @@ export default function Home() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {/* Feature Card 1 - Camera */}
           <div className="bg-[#F2F3F8] p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation h-[365px] flex flex-col items-center justify-center text-center">
             <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6">
               <Image
                 src="/solar_camera-outline.svg"
-                alt="Camera Icon"
+                alt="360° kamera belgisi"
                 width={50}
                 height={50}
                 className="w-[50px] h-[50px]"
@@ -155,12 +145,11 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Feature Card 2 - Security */}
           <div className="bg-[#F2F3F8] p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation h-[365px] flex flex-col items-center justify-center text-center">
             <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6">
               <Image
                 src="/carbon_security.svg"
-                alt="Security Icon"
+                alt="Xavfsizlik belgisi"
                 width={50}
                 height={50}
                 className="w-[50px] h-[50px]"
@@ -176,12 +165,11 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Feature Card 3 - Fast Service */}
           <div className="bg-[#F2F3F8] p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 active:scale-95 touch-manipulation sm:col-span-2 lg:col-span-1 h-[365px] flex flex-col items-center justify-center text-center">
             <div className="w-[92px] h-[92px] bg-[#1E3A8A] rounded-[19px] flex items-center justify-center mb-6">
               <Image
                 src="/mage_electricity.svg"
-                alt="Fast Service Icon"
+                alt="Tezkor xizmat belgisi"
                 width={50}
                 height={50}
                 className="w-[50px] h-[50px]"
@@ -199,7 +187,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works Section */}
       <section
         id="how-it-works"
         className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
@@ -215,14 +202,13 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Step indicators with arrows (desktop) */}
         <div className="hidden lg:flex items-center justify-between max-w-5xl mx-auto mb-10">
           <div className="w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center">
             <span className="text-white text-2xl font-bold">01</span>
           </div>
           <Image
             src="/Line-1.png"
-            alt="Arrow"
+            alt=""
             width={234}
             height={24}
             className="w-[234px] h-6 object-contain"
@@ -232,7 +218,7 @@ export default function Home() {
           </div>
           <Image
             src="/Line-1.png"
-            alt="Arrow"
+            alt=""
             width={234}
             height={24}
             className="w-[234px] h-6 object-contain"
@@ -243,9 +229,7 @@ export default function Home() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 items-start">
-          {/* Step 1 */}
           <div className="text-center">
-            {/* Mobile number badge */}
             <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
               <span className="text-white font-bold">01</span>
             </div>
@@ -253,7 +237,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
                 <img
                   src="/mynaui_download.svg"
-                  alt="Download Icon"
+                  alt="Ilovani yuklab olish belgisi"
                   width={24}
                   height={24}
                   className="w-6 h-6"
@@ -270,20 +254,17 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Mobile connector */}
           <div className="lg:hidden flex items-center justify-center -mt-4 -mb-2">
             <Image
               src="/Line-2.png"
-              alt="Connector"
+              alt=""
               width={32}
               height={32}
               className="w-8 h-8 object-contain"
             />
           </div>
 
-          {/* Step 2 */}
           <div className="text-center">
-            {/* Mobile number badge */}
             <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
               <span className="text-white font-bold">02</span>
             </div>
@@ -291,7 +272,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
                 <img
                   src="/proicons_location.svg"
-                  alt="Location Icon"
+                  alt="Joylashuv belgisi"
                   width={24}
                   height={24}
                   className="w-6 h-6"
@@ -310,20 +291,17 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Mobile connector */}
           <div className="lg:hidden flex items-center justify-center -mt-4 -mb-2">
             <Image
               src="/Line-2.png"
-              alt="Connector"
+              alt=""
               width={32}
               height={32}
               className="w-8 h-8 object-contain"
             />
           </div>
 
-          {/* Step 3 */}
           <div className="text-center">
-            {/* Mobile number badge */}
             <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
               <span className="text-white font-bold">03</span>
             </div>
@@ -331,7 +309,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
                 <img
                   src="/solar_play-linear.svg"
-                  alt="Play Icon"
+                  alt="Boshlash belgisi"
                   width={24}
                   height={24}
                   className="w-6 h-6"
@@ -346,11 +324,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Mobile connectors are rendered inline between steps above */}
       </section>
-
-      {/* Trusted Section */}
       <section
         id="trusted"
         className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
@@ -369,12 +343,11 @@ export default function Home() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Users */}
           <div className="text-center">
             <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-6">
               <Image
                 src="/tabler_users.svg"
-                alt="Users Icon"
+                alt="Foydalanuvchilar belgisi"
                 width={32}
                 height={32}
                 className="w-8 h-8"
@@ -384,13 +357,11 @@ export default function Home() {
               {mounted ? t("trusted.users") : "10,000+ Foydalanuvchilar"}
             </h3>
           </div>
-
-          {/* Wash Points */}
           <div className="text-center">
             <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-6">
               <Image
                 src="/proicons_location-1.svg"
-                alt="Location Icon"
+                alt="Manzil belgisi"
                 width={32}
                 height={32}
                 className="w-8 h-8"
@@ -400,13 +371,11 @@ export default function Home() {
               {mounted ? t("trusted.washPoints") : "100+ Moyka nuqtasi"}
             </h3>
           </div>
-
-          {/* Service */}
           <div className="text-center sm:col-span-2 lg:col-span-1">
             <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-6">
               <Image
                 src="/tdesign_time.svg"
-                alt="Time Icon"
+                alt="Vaqt belgisi"
                 width={32}
                 height={32}
                 className="w-8 h-8"
@@ -418,8 +387,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Sponsors Section */}
       <section
         id="sponsors"
         className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
@@ -434,7 +401,6 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
-          {/* Sponsor placeholder cards */}
           <div className="text-center">
             <div className="w-full h-[120px] sm:h-[140px] lg:h-[161px] bg-[#F2F3F8] rounded-[10px] flex items-center justify-center mx-auto shadow-sm">
               <span className="text-[#1E3A8A] font-semibold">Tez kunda!</span>
@@ -466,8 +432,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Global Footer at the very bottom */}
       <footer className="mt-auto bg-[#020A22] text-white">
         <div className="container mx-auto px-4 lg:px-0 py-12 sm:py-14 lg:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 items-start">
@@ -523,14 +487,14 @@ export default function Home() {
               <div className="mt-4 flex items-center gap-3">
                 <Image
                   src="/image 32.png"
-                  alt="Google Play"
+                  alt="Google Play belgisi"
                   width={128}
                   height={40}
                   className="h-10 w-auto object-contain"
                 />
                 <Image
                   src="/Frame 149.png"
-                  alt="App Store"
+                  alt="App Store belgisi"
                   width={128}
                   height={40}
                   className="h-10 w-auto object-contain"
@@ -541,7 +505,7 @@ export default function Home() {
                   src="/qrcode.png"
                   width={112}
                   height={112}
-                  alt="QR"
+                  alt="Washcam ilovasi uchun QR-kod"
                   className="w-full h-full object-contain"
                 />
               </div>

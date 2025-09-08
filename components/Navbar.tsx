@@ -18,7 +18,6 @@ const Navbar = () => {
     setMounted(true);
   }, []);
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -49,7 +48,6 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Don't render anything until mounted to prevent hydration mismatch
   if (!mounted) {
     return (
       <nav className="bg-white shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.12)] sticky top-0 z-50">
@@ -57,7 +55,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-2 sm:space-x-3">
             <Image
               src="/logo.svg"
-              alt="Washcam Logo"
+              alt="Washcam logotipi"
               width={56}
               height={44}
               className="w-8 h-8 sm:w-10 sm:h-10"
@@ -78,7 +76,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-2 sm:space-x-3">
           <Image
             src="/logo.svg"
-            alt="Washcam Logo"
+            alt="Washcam logotipi"
             width={56}
             height={44}
             className="w-8 h-8 sm:w-10 sm:h-10"
@@ -88,7 +86,6 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* Desktop Navigation Links */}
         <div className="hidden lg:flex items-center space-x-8">
           <Link
             href="/"
@@ -116,9 +113,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Desktop Language Switcher and Download Button */}
         <div className="hidden lg:flex items-center space-x-6">
-          {/* Language Switcher Dropdown */}
           <div className="relative">
             <button
               onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
@@ -133,8 +128,6 @@ const Navbar = () => {
                 }`}
               />
             </button>
-
-            {/* Dropdown Menu */}
             {isLanguageDropdownOpen && (
               <div className="absolute top-full left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 min-w-[120px]">
                 {languages.map((language) => (
@@ -155,14 +148,10 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
-          {/* Download Button */}
           <button className="bg-[#1E3A8A] text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 font-sans min-w-[140px] text-center">
             {t("nav.yuklabOlish")}
           </button>
         </div>
-
-        {/* Mobile Menu Button */}
         <button
           onClick={toggleMobileMenu}
           className="lg:hidden p-2 text-[#152349] hover:text-[#1E3A8A] transition-colors duration-200 touch-manipulation"
@@ -175,12 +164,9 @@ const Navbar = () => {
           )}
         </button>
       </div>
-
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg mobile-menu-container">
           <div className="container mx-auto px-4 py-6 space-y-4">
-            {/* Mobile Navigation Links */}
             <div className="space-y-3">
               <Link
                 href="/"
@@ -211,8 +197,6 @@ const Navbar = () => {
                 {t("nav.bizHaqimizda")}
               </Link>
             </div>
-
-            {/* Mobile Language Switcher */}
             <div className="pt-4 border-t border-gray-200">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-gray-600">Til:</span>
@@ -238,8 +222,6 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-
-            {/* Mobile Download Button */}
             <div className="pt-4">
               <button className="w-full bg-[#1E3A8A] text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 font-sans touch-manipulation">
                 {t("nav.yuklabOlish")}
