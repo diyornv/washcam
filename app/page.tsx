@@ -47,7 +47,7 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl">
               {mounted
                 ? t("hero.description")
-                : "O'zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali mashinangizni real vaqt rejimida kuzating. Washcam bilan avtomobilingiz yuvilishini jonli ko'ring! Moyka, mashina yuvish xizmati."}
+                : "O&apos;zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali mashinangizni real vaqt rejimida kuzating. Washcam bilan avtomobilingiz yuvilishini jonli ko&apos;ring! Moyka, mashina yuvish xizmati."}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -122,7 +122,7 @@ export default function Home() {
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             {mounted
               ? t("features.subtitle")
-              : "O'zbekistondagi eng yaxshi moyka xizmati! Avtomobil yuvish kelajagini bizning innovatsion xususiyatlarimiz bilan his qiling. Moyka, mashina yuvish xizmati."}
+              : "O&apos;zbekistondagi eng yaxshi moyka xizmati! Avtomobil yuvish kelajagini bizning innovatsion xususiyatlarimiz bilan his qiling. Moyka, mashina yuvish xizmati."}
           </p>
         </div>
 
@@ -163,7 +163,7 @@ export default function Home() {
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
               {mounted
                 ? t("features.feature2.description")
-                : "Mashina yuvish davomida xavfsizlikni to'liq ta'minlaymiz"}
+                : "Mashina yuvish davomida xavfsizlikni to&apos;liq ta&apos;minlaymiz"}
             </p>
           </div>
 
@@ -442,7 +442,7 @@ export default function Home() {
                 Washcam - Moyka xizmati
               </h4>
               <p className="text-gray-300 leading-relaxed text-sm">
-                O'zbekistondagi eng yaxshi moyka xizmati! 360° kamera
+                O&apos;zbekistondagi eng yaxshi moyka xizmati! 360° kamera
                 texnologiyasi bilan avtomobil yuvish jarayonini kuzatishning eng
                 yaxshi usuli. Moyka, mashina yuvish xizmati.
               </p>
