@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Washcam - Moyka xizmati",
   },
   description:
-    "Washcam – O'zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali avtomobil yuvish jarayonini onlayn kuzating. Moyka, mashina yuvish, avtomobil yuvish xizmati. Real vaqt bildirishnomalar, xavfsiz va qulay xizmat. Mobil ilova orqali eng yaqin moykani toping va jarayonni kuzating.",
+    "Washcam – O&apos;zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali avtomobil yuvish jarayonini onlayn kuzating. Moyka, mashina yuvish, avtomobil yuvish xizmati. Real vaqt bildirishnomalar, xavfsiz va qulay xizmat. Mobil ilova orqali eng yaqin moykani toping va jarayonni kuzating.",
   keywords: [
     "Washcam",
     "washcam uz",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Washcam – Moyka xizmati | Avtomobil yuvish 360° kamera bilan",
     description:
-      "O'zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali avtomobilingiz yuvilishini jonli kuzating. Moyka, mashina yuvish xizmati. Eng yaqin moykani tanlang, buyurtma bering va jarayonni xavfsiz kuzating.",
+      "O&apos;zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali avtomobilingiz yuvilishini jonli kuzating. Moyka, mashina yuvish xizmati. Eng yaqin moykani tanlang, buyurtma bering va jarayonni xavfsiz kuzating.",
     url: "https://washcam.uz",
     siteName: "Washcam",
     images: [
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Washcam – Moyka xizmati | 360° kamera bilan avtomobil yuvish",
     description:
-      "O'zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali avtomobil yuvish jarayonini onlayn kuzatish. Moyka, mashina yuvish xizmati.",
+      "O&apos;zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali avtomobil yuvish jarayonini onlayn kuzatish. Moyka, mashina yuvish xizmati.",
     images: ["https://washcam.uz/logo.svg"],
     creator: "@washcam",
     site: "@washcam",
@@ -199,7 +199,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Washcam - Moyka xizmati",
               description:
-                "O'zbekistondagi eng yaxshi moyka xizmati. 360° kamera orqali avtomobil yuvish jarayonini onlayn kuzatish.",
+                "O&apos;zbekistondagi eng yaxshi moyka xizmati. 360° kamera orqali avtomobil yuvish jarayonini onlayn kuzatish.",
               url: "https://washcam.uz",
               logo: "https://washcam.uz/logo.svg",
               address: {
