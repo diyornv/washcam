@@ -51,7 +51,7 @@ const Navbar = () => {
   if (!mounted) {
     return (
       <nav className="bg-white shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.12)] sticky top-0 z-50">
-        <div className="container mx-auto flex items-center justify-between h-[70px] sm:h-[80px] lg:h-[90px] px-4 lg:px-0">
+        <div className="container mx-auto flex items-center justify-between h-[70px] sm:h-[80px] lg:h-[90px] section-padding">
           <div className="flex items-center space-x-2 sm:space-x-3">
             <Image
               src="/logo.svg"
@@ -72,7 +72,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-[0px_4px_15px_0px_rgba(0,_0,_0,_0.12)] sticky top-0 z-50">
-      <div className="container mx-auto flex items-center justify-between h-[70px] sm:h-[80px] lg:h-[90px] px-4 lg:px-0">
+      <div className="container mx-auto flex items-center justify-between h-[70px] sm:h-[80px] lg:h-[90px] section-padding">
         <div className="flex items-center space-x-2 sm:space-x-3">
           <Image
             src="/logo.svg"
@@ -166,7 +166,7 @@ const Navbar = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg mobile-menu-container">
-          <div className="container mx-auto px-4 py-6 space-y-4">
+          <div className="container mx-auto section-padding py-6 space-y-4">
             <div className="space-y-3">
               <Link
                 href="/"

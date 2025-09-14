@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white relative overflow-x-hidden flex-1 flex flex-col">
-      <section className="container mx-auto px-4 lg:px-0 pt-8 sm:pt-16 lg:pt-[170px] pb-12 lg:pb-20 relative z-10">
+      <section className="container mx-auto section-padding pt-8 sm:pt-15 lg:pt-[60px] pb-1 lg:pb-1 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
             <div className="relative">
@@ -47,7 +47,7 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl">
               {mounted
                 ? t("hero.description")
-                : "360° kamera orqali mashinangizni real vaqt rejimida kuzating. Washcam bilan avtomobilingiz yuvilishini jonli ko'ring!"}
+                : "O'zbekistondagi eng yaxshi moyka xizmati! 360° kamera orqali mashinangizni real vaqt rejimida kuzating. Washcam bilan avtomobilingiz yuvilishini jonli ko'ring! Moyka, mashina yuvish xizmati."}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -111,16 +111,18 @@ export default function Home() {
 
       <section
         id="features"
-        className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+        className="container mx-auto section-padding pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
-            {mounted ? t("features.title") : "Nega Washcam ni tanlash kerak?"}
+            {mounted
+              ? t("features.title")
+              : "Nega Washcam moyka xizmatini tanlash kerak?"}
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             {mounted
               ? t("features.subtitle")
-              : "Avtomobil yuvish kelajagini bizning innovatsion xususiyatlarimiz bilan his qiling"}
+              : "O'zbekistondagi eng yaxshi moyka xizmati! Avtomobil yuvish kelajagini bizning innovatsion xususiyatlarimiz bilan his qiling. Moyka, mashina yuvish xizmati."}
           </p>
         </div>
 
@@ -189,7 +191,7 @@ export default function Home() {
 
       <section
         id="how-it-works"
-        className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+        className="container mx-auto section-padding pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
@@ -327,7 +329,7 @@ export default function Home() {
       </section>
       <section
         id="trusted"
-        className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+        className="container mx-auto section-padding pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
@@ -389,7 +391,7 @@ export default function Home() {
       </section>
       <section
         id="sponsors"
-        className="container mx-auto px-4 lg:px-0 pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+        className="container mx-auto section-padding pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
@@ -433,13 +435,16 @@ export default function Home() {
         </div>
       </section>
       <footer className="mt-auto bg-[#020A22] text-white">
-        <div className="container mx-auto px-4 lg:px-0 py-12 sm:py-14 lg:py-16">
+        <div className="container mx-auto section-padding py-12 sm:py-14 lg:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 items-start">
             <div>
-              <h4 className="text-xl font-semibold mb-4">Washcam</h4>
+              <h4 className="text-xl font-semibold mb-4">
+                Washcam - Moyka xizmati
+              </h4>
               <p className="text-gray-300 leading-relaxed text-sm">
-                360° kamera texnologiyasi bilan avtomobil yuvish jarayonini
-                kuzatishning eng yaxshi usuli
+                O'zbekistondagi eng yaxshi moyka xizmati! 360° kamera
+                texnologiyasi bilan avtomobil yuvish jarayonini kuzatishning eng
+                yaxshi usuli. Moyka, mashina yuvish xizmati.
               </p>
               <button className="mt-4 inline-flex items-center gap-2 bg-[#1E3A8A] hover:bg-blue-700 transition-colors text-white px-4 py-2 rounded-md text-sm">
                 <span className="inline-block w-3 h-3 bg-white rounded-[2px]"></span>
@@ -456,12 +461,14 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h5 className="text-lg font-semibold mb-4">Xizmatlar</h5>
+              <h5 className="text-lg font-semibold mb-4">Moyka xizmatlari</h5>
               <ul className="space-y-2 text-gray-300 text-sm">
+                <li>Avtomobil yuvish</li>
+                <li>Mashina yuvish</li>
                 <li>360° Kamera kuzatuvi</li>
                 <li>Real vaqt bildirishnomalar</li>
                 <li>Online buyurtmalar</li>
-                <li>24/7 xizmat</li>
+                <li>24/7 moyka xizmati</li>
               </ul>
             </div>
             <div>
