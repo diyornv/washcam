@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white relative overflow-x-hidden flex-1 flex flex-col">
-      <section className="container mx-auto section-padding pt-8 sm:pt-15 lg:pt-[60px] pb-1 lg:pb-1 relative z-10">
+      <section className="container-responsive hero-padding pt-16 md:pt-20 lg:pt-[120px] pb-12 lg:pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
             <div className="relative">
@@ -111,7 +111,7 @@ export default function Home() {
 
       <section
         id="features"
-        className="container mx-auto section-padding pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+        className="container-responsive content-padding pt-16 md:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
@@ -191,7 +191,7 @@ export default function Home() {
 
       <section
         id="how-it-works"
-        className="container mx-auto section-padding pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+        className="container-responsive content-padding pt-16 md:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
@@ -329,7 +329,7 @@ export default function Home() {
       </section>
       <section
         id="trusted"
-        className="container mx-auto section-padding pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+        className="container-responsive content-padding pt-16 md:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
@@ -391,7 +391,7 @@ export default function Home() {
       </section>
       <section
         id="sponsors"
-        className="container mx-auto section-padding pt-16 sm:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
+        className="container-responsive content-padding pt-16 md:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
@@ -435,7 +435,7 @@ export default function Home() {
         </div>
       </section>
       <footer className="mt-auto bg-[#020A22] text-white">
-        <div className="container mx-auto section-padding py-12 sm:py-14 lg:py-16">
+        <div className="container-responsive content-padding py-12 sm:py-14 lg:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 items-start">
             <div>
               <h4 className="text-xl font-semibold mb-4">
