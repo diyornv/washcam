@@ -205,7 +205,7 @@ export default function Home() {
         </div>
 
         <div className="hidden lg:flex items-center justify-between max-w-5xl mx-auto mb-10">
-          <div className="w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+          <div className="w-24 h-24 bg-[#1E3A8A] rounded-full flex items-center justify-center">
             <span className="text-white text-2xl font-bold">01</span>
           </div>
           <Image
@@ -215,7 +215,7 @@ export default function Home() {
             height={24}
             className="w-[234px] h-6 object-contain"
           />
-          <div className="w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+          <div className="w-24 h-24 bg-[#1E3A8A] rounded-full flex items-center justify-center">
             <span className="text-white text-2xl font-bold">02</span>
           </div>
           <Image
@@ -225,24 +225,24 @@ export default function Home() {
             height={24}
             className="w-[234px] h-6 object-contain"
           />
-          <div className="w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+          <div className="w-24 h-24 bg-[#1E3A8A] rounded-full flex items-center justify-center">
             <span className="text-white text-2xl font-bold">03</span>
           </div>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 items-start">
           <div className="text-center">
-            <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
+            <div className="lg:hidden w-14 h-14 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
               <span className="text-white font-bold">01</span>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-6 h-[263px] sm:h-[222px] lg:h-[365px] flex flex-col items-center justify-center">
-              <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
+              <div className="w-[92px] h-[92px] bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
                 <img
                   src="/mynaui_download.svg"
                   alt="Ilovani yuklab olish belgisi"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
@@ -267,17 +267,17 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
+            <div className="lg:hidden w-14 h-14 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
               <span className="text-white font-bold">02</span>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-6 h-[263px] sm:h-[222px] lg:h-[365px] flex flex-col items-center justify-center">
-              <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
+              <div className="w-[92px] h-[92px] bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
                 <img
                   src="/proicons_location.svg"
                   alt="Joylashuv belgisi"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
@@ -304,17 +304,17 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <div className="lg:hidden w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
+            <div className="lg:hidden w-14 h-14 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
               <span className="text-white font-bold">03</span>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-6 h-[263px] sm:h-[222px] lg:h-[365px] flex flex-col items-center justify-center">
-              <div className="w-12 h-12 bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
+              <div className="w-[92px] h-[92px] bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
                 <img
                   src="/solar_play-linear.svg"
                   alt="Boshlash belgisi"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
@@ -350,9 +350,9 @@ export default function Home() {
               <Image
                 src="/tabler_users.svg"
                 alt="Foydalanuvchilar belgisi"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={40}
+                height={40}
+                className="w-10 h-10"
               />
             </div>
             <h3 className="text-2xl font-bold text-[#152349] mb-2">
@@ -364,9 +364,9 @@ export default function Home() {
               <Image
                 src="/proicons_location-1.svg"
                 alt="Manzil belgisi"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={40}
+                height={40}
+                className="w-10 h-10"
               />
             </div>
             <h3 className="text-2xl font-bold text-[#152349] mb-2">
@@ -378,9 +378,9 @@ export default function Home() {
               <Image
                 src="/tdesign_time.svg"
                 alt="Vaqt belgisi"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={40}
+                height={40}
+                className="w-10 h-10"
               />
             </div>
             <h3 className="text-2xl font-bold text-[#152349] mb-2">
