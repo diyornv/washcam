@@ -44,7 +44,7 @@ const resources = {
         },
       },
       howItWorks: {
-        title: "WebCam qanday ishlaydi",
+        title: "WashCam qanday ishlaydi",
         subtitle: "Uchta oddiy qadam bilan Washcam-dan foydalanishni boshlang",
         step1: {
           title: "Ilovani yuklab oling",
@@ -114,7 +114,7 @@ const resources = {
         },
       },
       howItWorks: {
-        title: "Как работает WebCam",
+        title: "Как работает WashCam",
         subtitle: "Начните использовать Washcam в три простых шага",
         step1: {
           title: "Скачайте приложение",
@@ -182,7 +182,7 @@ const resources = {
         },
       },
       howItWorks: {
-        title: "How WebCam works",
+        title: "How WAshCam works",
         subtitle: "Start using Washcam in three simple steps",
         step1: {
           title: "Download the app",
