@@ -109,6 +109,42 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="about" className="container-responsive content-padding pt-12 pb-12 relative z-10">
+        <div className="max-w-5xl mx-auto">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-6">
+            {mounted ? t("about.title") : "Biz haqimizda"}
+          </h2>
+          <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-8">
+            {mounted ? t("about.description") : ""}
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-8">
+            <div className="bg-[#F2F3F8] p-6 sm:p-8 rounded-2xl">
+              <h3 className="text-lg font-semibold text-[#152349] mb-4">
+                {mounted ? t("about.companyInfo.title") : "Kompaniya ma'lumotlari"}
+              </h3>
+              <ul className="text-gray-700 text-sm space-y-2">
+                <li>{mounted ? t("about.companyInfo.legalName") : ""}</li>
+                <li>{mounted ? t("about.companyInfo.registered") : ""}</li>
+                <li>{mounted ? t("about.companyInfo.headquarters") : ""}</li>
+                <li>{mounted ? t("about.companyInfo.industry") : ""}</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#F2F3F8] p-6 sm:p-8 rounded-2xl">
+              <h3 className="text-lg font-semibold text-[#152349] mb-4">
+                {mounted ? t("about.team.title") : "Jamoa"}
+              </h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                <strong>{mounted ? t("about.team.founderTitle") : ""}</strong>
+                <br />
+                <br />
+                {mounted ? t("about.team.founderBio") : ""}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         id="features"
         className="container-responsive content-padding pt-16 md:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
@@ -189,13 +225,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="product" className="container-responsive content-padding pt-16 md:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
+            {mounted ? t("product.title") : "Mahsulot"}
+          </h2>
+        </div>
+
+        <div className="max-w-4xl mx-auto bg-[#F2F3F8] p-8 sm:p-10 rounded-2xl text-gray-700">
+          <p className="mb-0 text-base sm:text-lg leading-relaxed">
+            {mounted ? t("product.description") : ""}
+          </p>
+        </div>
+      </section>
+
       <section
         id="how-it-works"
         className="container-responsive content-padding pt-16 md:pt-20 lg:pt-[200px] pb-12 lg:pb-20 relative z-10"
       >
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#152349] mb-4">
-            {mounted ? t("howItWorks.title") : "WebCam qanday ishlaydi"}
+            {mounted ? t("howItWorks.title") : "Qanday ishlaydi"}
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             {mounted
@@ -228,9 +278,19 @@ export default function Home() {
           <div className="w-24 h-24 bg-[#1E3A8A] rounded-full flex items-center justify-center">
             <span className="text-white text-2xl font-bold">03</span>
           </div>
+          <Image
+            src="/Line-1.png"
+            alt=""
+            width={234}
+            height={24}
+            className="w-[234px] h-6 object-contain"
+          />
+          <div className="w-24 h-24 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+            <span className="text-white text-2xl font-bold">04</span>
+          </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-12 items-start">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-start">
           <div className="text-center">
             <div className="lg:hidden w-14 h-14 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
               <span className="text-white font-bold">01</span>
@@ -246,12 +306,10 @@ export default function Home() {
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
-                {mounted ? t("howItWorks.step1.title") : "Ilovani yuklab oling"}
+                {mounted ? t("howItWorks.step1.title") : "Kameralar 360° video yozib oladi"}
               </h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                {mounted
-                  ? t("howItWorks.step1.description")
-                  : "App Store yoki Google Play-dan Washcam-ni yuklab oling"}
+                {mounted ? t("howItWorks.step1.description") : "Har bir moyka joy uchun 360° video yozib olinadi"}
               </p>
             </div>
           </div>
@@ -281,14 +339,10 @@ export default function Home() {
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
-                {mounted
-                  ? t("howItWorks.step2.title")
-                  : "Eng yaqin Washcam moykasini tanlash"}
+                {mounted ? t("howItWorks.step2.title") : "AI yuvish jarayonini real vaqtda tahlil qiladi"}
               </h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                {mounted
-                  ? t("howItWorks.step2.description")
-                  : "Sizga yaqin qulay joyni toping va tanlang"}
+                {mounted ? t("howItWorks.step2.description") : "Kompyuter ko'rishi yordamida jarayonni tahlil qiladi va nosozliklarni aniqlaydi"}
               </p>
             </div>
           </div>
@@ -318,10 +372,43 @@ export default function Home() {
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
-                Jararayonni jonli kuzatish
+                {mounted ? t("howItWorks.step3.title") : "Ma'lumotlar bulutda qayta ishlanadi"}
               </h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                Avtomobilingizni 360° kamera orqali yuvayotganini tomosha qiling
+                {mounted ? t("howItWorks.step3.description") : "Bulut xizmati orqali ma'lumotlar saqlanadi va tahlil qilinadi"}
+              </p>
+            </div>
+          </div>
+
+          <div className="lg:hidden flex items-center justify-center -mt-4 -mb-2">
+            <Image
+              src="/Line-2.png"
+              alt=""
+              width={32}
+              height={32}
+              className="w-8 h-8 object-contain"
+            />
+          </div>
+
+          <div className="text-center">
+            <div className="lg:hidden w-14 h-14 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-2">
+              <span className="text-white font-bold">04</span>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 h-[263px] sm:h-[222px] lg:h-[365px] flex flex-col items-center justify-center">
+              <div className="w-[92px] h-[92px] bg-[#F2F3F8] rounded-[19px] flex items-center justify-center mb-4">
+                <img
+                  src="/solar_play-linear.svg"
+                  alt="Monitoring icon"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-[#152349] mb-3">
+                {mounted ? t("howItWorks.step4.title") : "Foydalanuvchilar ilova orqali kuzatadi"}
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                {mounted ? t("howItWorks.step4.description") : "Mobil va web ilovalar orqali real vaqtda monitoring"}
               </p>
             </div>
           </div>
@@ -490,6 +577,7 @@ export default function Home() {
                     +998 95 009 00 09
                   </a>
                 </li>
+                <li className="text-gray-300">Location: Tashkent, Uzbekistan</li>
               </ul>
               <div className="mt-4 flex items-center gap-3">
                 <Image

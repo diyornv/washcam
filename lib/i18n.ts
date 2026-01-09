@@ -71,6 +71,50 @@ const resources = {
         title: "Bizning homiylarimiz",
         subtitle: "Ishonchli hamkorlarimiz",
       },
+      about: {
+        title: "Biz haqimizda",
+        description:
+          "Washcam LLC — Oʻzbekistonda roʻyxatdan oʻtgan va Toshkent shahrida joylashgan texnologik startap. Biz avtomoyka jarayonlarini kompyuter ko'rishi, sun'iy intellekt va avtomatlashtirish orqali modernizatsiya qiluvchi AI-first yechimlar yaratamiz. Washcam texnologiyasi obuna asosidagi SaaS platforma sifatida taqdim etiladi va oddiy avtomoyka emas, balki texnologik kompaniyadir.",
+        companyInfo: {
+          title: "Kompaniya ma'lumotlari",
+          legalName: "Yuridik nomi: Washcam LLC",
+          registered: "Ro'yxatdan o'tgan: O'zbekiston",
+          headquarters: "Joylashuv: Toshkent, O'zbekiston",
+          industry: "Soha: AI asosidagi avtomoyka avtomatlashtirish va monitoring",
+        },
+        team: {
+          title: "Jamoa",
+          founderTitle: "Asoschi & CEO — Diyorbek Nurullayev",
+          founderBio:
+            "Kompyuter ko'rishi, bulutli platformalar va kengaytiriladigan SaaS mahsulotlariga ixtisoslashgan texnologik tadbirkor.",
+        },
+      },
+      product: {
+        title: "Mahsulot",
+        description:
+          "Avtomoykalar uchun AI asosidagi monitoring platformasi. Real vaqtli 360° video tahlil, nosozliklarni aniqlash, bulutli boshqaruv paneli va mobil/web ilovalarni o'z ichiga oladi. Platforma amalda ishlayotgan avtomoykalarda joriy etilgan.",
+      },
+      howItWorks: {
+        title: "Qanday ishlaydi",
+        subtitle: "Uchta oddiy qadam bilan Washcam-dan foydalanishni boshlang",
+        step1: {
+          title: "Kameralar 360° video yozib oladi",
+          description: "Har bir moyka joy uchun 360° video yozib olinadi",
+        },
+        step2: {
+          title: "AI yuvish jarayonini real vaqtda tahlil qiladi",
+          description:
+            "Kompyuter ko'rishi yordamida jarayonni tahlil qiladi va nosozliklarni aniqlaydi",
+        },
+        step3: {
+          title: "Ma'lumotlar bulutda qayta ishlanadi",
+          description: "Bulut xizmati orqali ma'lumotlar saqlanadi va tahlil qilinadi",
+        },
+        step4: {
+          title: "Foydalanuvchilar ilova orqali kuzatadi",
+          description: "Mobil va web ilovalar orqali real vaqtda monitoring",
+        },
+      },
     },
   },
   RU: {
@@ -140,6 +184,50 @@ const resources = {
         title: "Наши спонсоры",
         subtitle: "Надежные партнеры",
       },
+      about: {
+        title: "О нас",
+        description:
+          "Washcam LLC — технологический стартап, зарегистрированный в Узбекистане и расположенный в Ташкенте. Мы разрабатываем AI-first решения для автоматизации и мониторинга автомоек с использованием компьютерного зрения и облачной инфраструктуры. Washcam предоставляет свою технологию в виде SaaS-платформы и не является традиционной автомойкой.",
+        companyInfo: {
+          title: "Информация о компании",
+          legalName: "Юридическое название: Washcam LLC",
+          registered: "Регистрация: Узбекистан",
+          headquarters: "Штаб-квартира: Ташкент, Узбекистан",
+          industry: "Отрасль: AI-автоматизация и мониторинг автомоек",
+        },
+        team: {
+          title: "Команда",
+          founderTitle: "Основатель и CEO — Диёрбек Нуруллаев",
+          founderBio:
+            "Технологический предприниматель, специализирующийся на компьютерном зрении, облачных платформах и SaaS-продуктах.",
+        },
+      },
+      product: {
+        title: "Продукт",
+        description:
+          "AI-платформа мониторинга для автоматизированных автомоек с анализом 360° видео в реальном времени, выявлением аномалий и облачными панелями управления. Платформа используется на действующих автомойках.",
+      },
+      howItWorks: {
+        title: "Как это работает",
+        subtitle: "Начните использовать Washcam в три простых шага",
+        step1: {
+          title: "Камеры записывают 360° видео",
+          description: "Непрерывная запись видео во всех зонах мойки",
+        },
+        step2: {
+          title: "AI анализирует процесс мойки",
+          description:
+            "Компьютерное зрение в реальном времени обнаруживает аномалии",
+        },
+        step3: {
+          title: "Данные обрабатываются в облаке",
+          description: "Облачное хранилище и аналитика данных",
+        },
+        step4: {
+          title: "Пользователи отслеживают через приложения",
+          description: "Мониторинг через мобильные и веб-приложения",
+        },
+      },
     },
   },
   ENG: {
@@ -207,6 +295,49 @@ const resources = {
       sponsors: {
         title: "Our sponsors",
         subtitle: "Reliable partners",
+      },
+      about: {
+        title: "About Us",
+        description:
+          "Washcam LLC is a digital-native technology startup registered in Uzbekistan and headquartered in Tashkent. We build AI-first solutions that modernize car wash operations through computer vision, automation, and cloud-native infrastructure. Our mission is to bring transparency, efficiency, and trust to car wash businesses and their customers using AI-driven monitoring and real-time video analytics. Washcam delivers its technology as a subscription-based SaaS platform and is not a traditional car wash operator.",
+        companyInfo: {
+          title: "Company Information",
+          legalName: "Legal name: Washcam LLC",
+          registered: "Registered: Uzbekistan",
+          headquarters: "Headquarters: Tashkent, Uzbekistan",
+          industry: "Industry: AI-powered car wash automation & monitoring",
+        },
+        team: {
+          title: "Team",
+          founderTitle: "Founder & CEO — Diyorbek Nurullayev",
+          founderBio:
+            "Technology entrepreneur focused on computer vision, cloud platforms, and scalable SaaS products.",
+        },
+      },
+      product: {
+        title: "Product",
+        description:
+          "AI-powered monitoring platform for automated car wash operations, including real-time 360° video analytics, anomaly detection, cloud dashboards, and mobile/web applications. The platform is deployed in active car wash locations.",
+      },
+      howItWorks: {
+        title: "How it works",
+        subtitle: "Start using Washcam in three simple steps",
+        step1: {
+          title: "Cameras capture 360° video streams",
+          description: "Continuous video capture across all wash bays",
+        },
+        step2: {
+          title: "AI analyzes the wash process in real time",
+          description: "Computer vision detects stages and anomalies",
+        },
+        step3: {
+          title: "Data is processed in the cloud",
+          description: "Cloud storage and data analytics",
+        },
+        step4: {
+          title: "Users monitor via mobile and web apps",
+          description: "Real-time monitoring through applications",
+        },
       },
     },
   },
